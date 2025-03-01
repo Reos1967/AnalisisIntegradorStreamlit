@@ -28,4 +28,4 @@ with center_col:
     st.title("Transición Energética - Analisis del CO2 y el PIB")
     st.write("""
     Relación entre las emisiones de CO₂ y el PIB en Colombia para identificar sectores 
-    industriales clave y apoyar la formulación de normativas para reducir sus emisiones.
+    industriales clave y apoyar la formulación de normativas para reducir sus emisiones."""
