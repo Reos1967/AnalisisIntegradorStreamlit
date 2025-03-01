@@ -16,7 +16,7 @@ def generarMenuInfo(df):
             
 
         st.page_link("app.py", label="Home", icon="🏚️")
-        st.page_link("Pages\informe.py", label="Información", icon="📝")
+        st.page_link("pages\informe.py", label="Información", icon="📝")
 
 
 def generarMenu():
@@ -30,4 +30,4 @@ def generarMenu():
             
 
         st.page_link("app.py", label="Home", icon="🏚️")
-        st.page_link("Pages\informe.py", label="infor", icon="📝")
+        st.page_link("pages\informe.py, label="infor", icon="📝")
