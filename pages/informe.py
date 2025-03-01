@@ -1,5 +1,4 @@
 import pandas as pd
-import utilidades as util
 import streamlit as st
 from matplotlib import pyplot as plt
 import seaborn as sns
@@ -21,7 +20,14 @@ df = pd.read_csv(ruta)
 tex = "Este estudio presenta un análisis de los datos relevantes sobre la generación de CO₂ y el PIB a nivel mundial desde el año 2000 hasta 2023. Se examina la correlación y variabilidad de estos indicadores en el contexto de su evolución global. El objetivo es comprender estos cambios para orientar el diseño y evaluación de políticas públicas en Colombia, con un enfoque en los distintos sectores industriales."
 st.write(df, tex)
 
-util.generarMenuInfo(df)
+with st.sidebar:
+        col1, col2 = st.columns(2)
+        with col1: 
+            st.page_link("app.py", label="Home", icon="🏚️")
+            st.page_link("pages\informe.py", label="infor", icon="📝")
+        with col2:
+            st.header("Analisis del CO2 y el PIB")
+            
 #selector de gráficos
 st.header('Visualizador de Gráficos') 
 tipo = st.selectbox('Seleccione el tipo de gráfico', ["Emisiones de CO₂ en relación con el PIB", "Tendencia de Emisiones de CO2 por Sector Industrial", "Evolución del Cambio de Temperatura Global Atribuido al CO2", "Emisiones totales de CO2 vs Año", "Relación entre PIB y Emisiones de CO₂ per cápita"] )
