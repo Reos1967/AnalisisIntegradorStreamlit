@@ -1,5 +1,4 @@
 import streamlit as st
-import utilidades as util
 
 #pagina de presentacion o index
 st.set_page_config(
