@@ -13,7 +13,7 @@ with st.sidebar:
         col1, col2 = st.columns(2)
         with col1: 
             st.page_link("app.py", label="Home", icon="🏚️")
-            st.page_link("pages\informe.py", label="infor", icon="📝")
+            st.page_link("informe.py", label="infor", icon="📝")
         with col2:
             st.header("Analisis del CO2 y el PIB")
 
